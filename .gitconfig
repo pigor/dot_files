@@ -1,6 +1,6 @@
 [user]
-  name = Mateus Linhares
-  email = mateuslinhares@gmail.com
+  name = Paulo Igor
+  email = piagodinho@gmail.com
 [alias]
   co=checkout
   br=branch
@@ -10,7 +10,7 @@
   who = shortlog -s --
 [core]
   editor = vim
-  excludesfile = /home/mlinhares/.gitignore
+  excludesfile = /home/pigor/.gitignore
 [color]
   diff = auto
   status = auto

@@ -137,7 +137,7 @@ function proml {
   # Previous Line
   # PS1="$LIGHT_GREEN[\u@\h \W]$LIGHT_RED \$(parse_git_branch)$WHITE\$ "
 
-  PS1="$WHITE[Pigor \W]$LIGHT_GREEN\$(parse_git_branch)$WHITE\$$LIGHT_GRAY "
+  PS1="$WHITE[pigor \W]$LIGHT_GREEN\$(parse_git_branch)$WHITE\$$LIGHT_GRAY "
   PS2='> '
   PS4='+ '
 
@@ -187,9 +187,9 @@ git-prompt () {
       STATE="${STATE}${YELLOW}*${NO_COLOR}"
     fi
 
-    PS1="$WHITE[Pigor $BLUE\W$WHITE]${NO_COLOR}(${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}) " # (${YELLOW}$(rvm_version)${NO_COLOR})\n$ "
+    PS1="$WHITE[pigor $BLUE\W$WHITE]${NO_COLOR}(${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}) " # (${YELLOW}$(rvm_version)${NO_COLOR})\n$ "
   else
-    PS1="$WHITE[Pigor $BLUE\W$WHITE]${NO_COLOR} " # (${YELLOW}$(rvm_version)${NO_COLOR})\n\$ "
+    PS1="$WHITE[pigor $BLUE\W$WHITE]${NO_COLOR} " # (${YELLOW}$(rvm_version)${NO_COLOR})\n\$ "
   fi
 }
 PROMPT_COMMAND=git-prompt
