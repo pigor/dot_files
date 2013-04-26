@@ -4,7 +4,7 @@ export CLICOLOR="auto"
 
 alias ls="ls -G"
 # Colours
-BLUE="\[\033[0;34m\]"
+BLUE="\[\033[1;34m\]"
 NO_COLOR="\[\e[0m\]"
 GRAY="\[\033[1;30m\]"
 GREEN="\[\033[0;32m\]"
@@ -114,7 +114,7 @@ function parse_git_branch {
 }
 
 function proml {
-  local        BLUE="\[\033[0;34m\]"
+  local        BLUE="\[\033[1;34m\]"
   local         RED="\[\033[0;31m\]"
   local   LIGHT_RED="\[\033[1;31m\]"
   local       GREEN="\[\033[0;32m\]"
