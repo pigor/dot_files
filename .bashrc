@@ -146,7 +146,7 @@ function proml {
 proml
 
 # F*cking Beep Off
-xset b off
+# xset b off
 
 # Including JRuby on $PATH
 export PATH=$PATH:/opt/jruby-1.2.0/bin
