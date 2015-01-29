@@ -146,7 +146,7 @@ function proml {
 proml
 
 # F*cking Beep Off
-# xset b off
+#xset b off
 
 # Including JRuby on $PATH
 export PATH=$PATH:/opt/jruby-1.2.0/bin
@@ -193,4 +193,8 @@ git-prompt () {
   fi
 }
 PROMPT_COMMAND=git-prompt
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
