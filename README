@@ -1,8 +1,8 @@
 Just some config files about bash
 
-add into .bashrc
+> add into .bash_profile
 
-.bash_profile  source .bashrc
+source .bashrc
  
 
 
