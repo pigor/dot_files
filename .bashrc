@@ -1,4 +1,3 @@
-export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="4;33"
 export CLICOLOR="auto"
 
@@ -148,6 +147,14 @@ proml
 # F*cking Beep Off
 #xset b off
 
+function tabname {
+  printf "\e]1;$1\a"
+}
+
+function winname {
+  printf "\e]2;$1\a"
+}
+
 # Including JRuby on $PATH
 #export PATH=$PATH:/opt/jruby-1.2.0/bin
 git-prompt () {
@@ -197,6 +204,22 @@ PROMPT_COMMAND=git-prompt
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [ -e /home/pigor/.nix-profile/etc/profile.d/nix.sh ]; then
+  . /home/pigor/.nix-profile/etc/profile.d/nix.sh
 
-jp2a --width=100 --background=light ~/Documents/projects/idopter-projects/idopterlabs.jpg
+  export LOCALE_ARCHIVE_2_11="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
+  export LOCALE_ARCHIVE_2_27="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
+  export LOCALE_ARCHIVE="/usr/bin/locale"
+fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/pigor/.sdkman"
+[[ -s "/home/pigor/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pigor/.sdkman/bin/sdkman-init.sh"
+
+export PIP_DIR="/home/pigor/.local/bin/"
+export PATH=$PATH:$PIP_DIR
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+export ERL_AFLAGS="-kernel shell_history enabled"
