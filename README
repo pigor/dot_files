@@ -1,8 +1,18 @@
-Just some config files about bash
+Oh My ZSH Configs
 
-> add into .bash_profile
+Installing:
 
-source .bashrc
- 
+> sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+Plugins:
+
+- https://github.com/zsh-users/zsh-autosuggestions
+- https://github.com/junegunn/fzf
+- https://github.com/zsh-users/zsh-syntax-highlighting
+
+Last step:
+
+> cp .zshrc $HOME
+> cp .gitconfig $HOME
 
 
