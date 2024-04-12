@@ -223,3 +223,7 @@ export PATH=$PATH:$PIP_DIR
 . $HOME/.asdf/completions/asdf.bash
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+export FLYCTL_INSTALL="/home/pigor/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+

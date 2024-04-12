@@ -1,6 +1,10 @@
 Oh My ZSH Configs
 
-Installing:
+Instalando o zsh:
+
+> sudo apt install zsh
+
+Instalando o oh my zsh:
 
 > sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

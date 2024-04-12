@@ -126,6 +126,3 @@ alias 'gsh'="git push"
 alias 'gadd'="git add --all"
 alias 'gl'="git lg"
 alias 'gf'="git fetch -p"
-
-# FZF custom config
-eval "$(fzf --zsh)"
